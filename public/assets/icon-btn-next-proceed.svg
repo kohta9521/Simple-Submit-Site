@@ -1,0 +1,19 @@
+<svg id="グループ_1" data-name="グループ 1" xmlns="http://www.w3.org/2000/svg" width="21.225" height="19.328" viewBox="0 0 53.062 48.32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #81d8d0;
+      }
+    </style>
+  </defs>
+  <path id="再生_" data-name="再生○" class="cls-1" d="M251.625,1070.56c14.653,0,26.531,10.82,26.531,24.16s-11.878,24.15-26.531,24.15-26.531-10.81-26.531-24.15S236.972,1070.56,251.625,1070.56Z" transform="translate(-225.094 -1070.56)"/>
+  <path id="再生_2" data-name="再生△" class="cls-2" d="M267.5,1094.77l-23.873,12.55v-25.1Z" transform="translate(-225.094 -1070.56)"/>
+</svg>
