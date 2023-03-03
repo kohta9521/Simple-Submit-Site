@@ -51,3 +51,10 @@
 .text-blue {
     color: #57d1d8;
 }
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 768px) {
+    .comment {
+
+    }
+}
