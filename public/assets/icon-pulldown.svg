@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.5" height="16" viewBox="0 0 47 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c2c2c2;
+        stroke: #d8d5d5;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+        opacity: 0.77;
+      }
+    </style>
+  </defs>
+  <path id="シェイプ_28" data-name="シェイプ 28" class="cls-1" d="M310.5,1723.01l-22.513-30h45.026Z" transform="translate(-287 -1692)"/>
+</svg>

@@ -1,0 +1,30 @@
+.footer {
+    width: 100%;
+    background-color: pink;
+    margin-top: 30px;
+}
+.footer-top {
+    width: 100%;
+    height: 20%;
+    background-color: white;
+}
+.copyrightImg {
+    display: flex;
+    width: 35%;
+    margin: 0 auto;
+}
+
+.footer-bottom {
+    width: 100%;
+    marign-bottom: 20px;
+}
+.footer-bottom ul {
+    width: 100%;
+    display: flex;
+}
+.footerList {
+    width: 30%;
+}
+.footerImg {
+    width: 100%;
+}

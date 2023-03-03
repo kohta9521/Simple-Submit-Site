@@ -1,0 +1,26 @@
+/* ヘッダー部分　開始 */
+.header {
+    widht: 100%;
+}
+.headerImg {
+    width: 100%;
+    object-fit: cover;
+}
+/* ヘッダー部分　終了 */
+
+/* ヒーロー部分　開始 */
+.hero {
+    widht: 100%;
+    max-width: 800px;
+}
+.heroImg {
+    object-fit: cover;
+}
+/* ヒーロー部分　終了 */
+
+/* レスポンシブデザイン */
+@media screen and (max-width:  768px) {
+    .header {
+        width: 100%;
+    }
+}
