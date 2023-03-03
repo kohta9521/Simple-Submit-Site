@@ -6,7 +6,7 @@ export default function Card1() {
 
     // js
     const cardButton = document.getElementById('cardTopButton');
-    
+
     useEffect(() => {
     function colorBlueChange1() {
         addEventListener('click', () => {
@@ -14,6 +14,12 @@ export default function Card1() {
             cardButton.style.color = '#fff';
             document.getElementById('submitButton').style.backgroundColor = "#57d1d8";
             document.getElementById('submitButton').style.fontColor = "#fff";
+
+            if (cardButton.style.backgroundColor === '#ED145D') {
+                comment.style.display = 'none';
+            } else {
+                Comment.style.display = 'block';
+            }
         })
     }        
     })
