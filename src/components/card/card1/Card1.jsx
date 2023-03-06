@@ -5,7 +5,7 @@ import "./Card1.css";
 export default function Card1() {
 
     // // js
-    // const cardButton = document.getElementById('cardTopButton');
+    const cardButton = document.getElementById('cardTopButton');
 
     // useEffect(() => {
     // function colorBlueChange1() {
