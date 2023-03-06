@@ -2,6 +2,7 @@
 .card1{
     width: 100%;
     background-color: white;
+    padding: 5px;
 }
 .card1Top {
     padding-top: 30px;
@@ -49,8 +50,9 @@
     color: white;
     border: 0.5px solid gray;
     border-radius: 10px;
+    cursor: pointer;
 }
-.card1Comment {
+#card1Comment {
     /* display: none; */
     width: 80%;
     height: 70px;
@@ -69,3 +71,12 @@
 .card1Check {
 }
 /* カード１　終了 */
+
+
+// commentの表示　非表示の切り替え用　コード
+.isClose {
+    display: none;
+}
+.isOpen {
+    display: block;
+}
