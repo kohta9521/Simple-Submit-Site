@@ -81,6 +81,11 @@
 .isOpen {
     display: block;
 }
-.pinkColorChange {
 
+// ボタンの色を変更する
+.pinkButton {
+
+}
+.whiteButton {
+    
 }

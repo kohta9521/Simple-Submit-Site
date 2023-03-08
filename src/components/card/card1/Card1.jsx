@@ -12,8 +12,9 @@ export default function Card1() {
     ]
 
     // valueの合計値によって挙動を変化させる
-    const sumValue= work[0].value + work[1].value + work[2].value + work[3].value;
-    console.log(sumValue);
+    // const sumValue= work[0].value + work[1].value + work[2].value + work[3].value;
+    // console.log(sumValue);
+    const sumValue = 0;
 
     // useState宣言部分
     const [ click1, setClick1 ] = useState(true);
@@ -23,13 +24,24 @@ export default function Card1() {
     const [ colorch, setColorch ] = useState('pink');
 
     // 条件分岐部分
-    
+    // sumValueの値が１以上だった時にComment部分を表示させない
+    if (sumValue < 1) {
+        
+    } else {
+
+    }
+
+    // 使用している関数
+    const toggle1 = () => {
+        
+    }
+
     return (
         <>
             <div className="card1">
             <div className="card1Container">
                 <div className="card1Top">
-                    <button className="card1TopButton">{work[0].title}</button>
+                    <button className="card1TopButton" onClick={toggle1}>{work[0].title}</button>
                     <button className="card1TopButton">{work[1].title}</button>
                 </div>
                 <div class="card1Bottom">
