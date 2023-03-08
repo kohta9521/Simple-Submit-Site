@@ -39,11 +39,12 @@ export default function Card1() {
     const toggle1 = () => {
         setClick1(!click1);
         setRed(!red);
-        setGreen(!green);
+        setGreen(!subWhite);
     }
     const toggle2 = () => {
         setClick2(!click2);
         setRed(!red);
+        setGreen(!subWhite);
     }
     const toggle3 = () => {
         setClick3(!click3);
