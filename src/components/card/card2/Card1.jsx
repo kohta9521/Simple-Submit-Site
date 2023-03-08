@@ -2,39 +2,12 @@ import React, { useState, useRef} from "react";
 
 import "./Card1.css";
 
-export default function Card1() {
-
-    const [clicked, setClicked] = useState(1);
+export default function Card2() {
 
     const work = [
-        { title: '保育士', value: 1 },
-        { title: '幼稚園教諭', value: 1 },
-        { title: 'その他', value: 0 },
-        { title: '資格なし', value: 0 },
+        { title: '正社員', value: 1 },
+        { title: 'パート', value: 0 },
     ]
-
-    const changeButton = (value) => {
-        // if (clicked) {
-        //     const blue = document.getElementById('submitButton2');
-        //     const red = document.getElementById('card1TopButton2');
-        //     const check = document.getElementById('card1TopButton2');
-        //     red.style.backgroundColor = 'red';
-        //     blue.style.backgroundColor = 'blue';
-        // } else {
-        //     console.log('completea');
-        // }
-        if (value === 1) {
-            const blue = document.getElementById('submitButton2');
-            const red = document.getElementById('card1TopButton2');
-            const check = document.getElementById('card1TopButton2');
-            red.style.backgroundColor = 'red';
-            blue.style.backgroundColor = 'blue';
-        } else {
-            const comment = document.getEkementById('card1Comment2');
-            comment.style.display = 'block';
-        }
-    }
-
 
     return (
         <>
@@ -44,13 +17,9 @@ export default function Card1() {
                     <button className="card1TopButton" id="card1TopButton2" type="button" onClick={() => changeButton(work[0].value)}>{work[0].title}</button>
                     <button className="card1TopButton" onClick="colorBlueChange1()">{work[1].title}</button>
                 </div>
-                <div className="card1Bottom">
-                    <button className="card1TopButton" onClick="colorBlueChange0()">{work[2].title}</button>
-                    <button className="card1TopButton" onClick="colorBlueChange0()">{work[3].title}</button>
-                </div>
                 <div className="card1Comment" id="card1Comment2">
                     <div className="card1CommentContainer">
-                    <p className="card1CommentText">※現在、資格をお持ちでない方のご紹介は難しくなっております。</p>
+                    <p className="card1CommentText">※パート求人は、即日でにゅうsyできる方にのみご案内しております</p>
                     <input className="card1Check" type="checkbox" onClick="check()"></input>
                     </div>
                 </div>
