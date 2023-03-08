@@ -11,30 +11,32 @@ export default function Card1() {
         { title: '資格なし', value: 0 },
     ]
 
-    const [click, setClick] = useState(true);
-    // 引数を配列の中身に設定して{value}の値によって挙動を変化させる
-    const button = () => {
-        // はじめに{value}が1のものを設定
-        // １の時にbuttonの背景色を変更／残りbuttnの背景色も変更する
-        setClick(!click);
-        // console.log('happy');
-        // 2の時は背景色を変更させるとともにチェックをする動作を監視し押されたところで残り４問のボタンを押させる
-    }
+    // valueの合計値によって挙動を変化させる
+    const sumValue= work[0].value + work[1].value + work[2].value + work[3].value;
+    console.log(sumValue);
 
+    // useState宣言部分
+    const [ click1, setClick1 ] = useState(true);
+    const [ click2, setClick2 ] = useState(true);
+    const [ click3, setClick3 ] = useState(true);
+    const [ click4, setClick4 ] = useState(true);
+    const [ colorch, setColorch ] = useState('pink');
 
+    // 条件分岐部分
+    
     return (
         <>
             <div className="card1">
             <div className="card1Container">
                 <div className="card1Top">
-                    <button className="card1TopButton" onClick={button}>{work[0].title}</button>
+                    <button className="card1TopButton">{work[0].title}</button>
                     <button className="card1TopButton">{work[1].title}</button>
                 </div>
                 <div class="card1Bottom">
                     <button className="card1TopButton">{work[2].title}</button>
                     <button className="card1TopButton">{work[3].title}</button>
                 </div>
-                <div className={click ? 'isOpen' : 'isClose'}  id="card1Comment">
+                <div id="card1Comment">
                     <div className="card1CommentContainer">
                     <p className="card1CommentText">※現在、資格をお持ちでない方のご紹介は難しくなっております。</p>
                     <input className="card1Check" type="checkbox" onClick="check()"></input>

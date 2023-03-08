@@ -69,6 +69,7 @@
     fot-weight: bold;
 }
 .card1Check {
+    width: 27px;
 }
 /* カード１　終了 */
 
@@ -79,4 +80,7 @@
 }
 .isOpen {
     display: block;
+}
+.pinkColorChange {
+
 }
