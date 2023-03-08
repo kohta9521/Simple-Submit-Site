@@ -18,7 +18,12 @@ export default function Card1() {
 
     // useState宣言部分
     const [ click1, setClick1 ] = useState(true);
+    const [ click2, setClick2 ] = useState(true);
+    const [ click3, setClick3 ] = useState(true);
+    const [ click4, setClick4 ] = useState(true);
     const [ red, setRed ] = useState('red');
+    const [ green, setGreen ] = useState('subGreen');
+    const [ open, setOpen ] = useState('close');
     console.log(red);
 
     // 条件分岐部分
@@ -33,14 +38,29 @@ export default function Card1() {
     // ボタンの色を変更させる関数
     const toggle1 = () => {
         setClick1(!click1);
+        setRed(!red);
+        setGreen(!subWhite);
+    }
+    const toggle2 = () => {
+        setClick2(!click2);
+        setRed(!red);
+        setGreen(!subWhite);
+    }
+    const toggle3 = () => {
+        setClick3(!click3);
         setRed(!red)
-        alert('fuck')
+        setOpen(!open);
+    }
+    const toggle4 = () => {
+        setClick4(!click4);
+        setRed(!red);
+        setOpen(!open);
     }
 
-    // 非表示／表示の関数
-    // const display = () => {
-
-    // }
+    // 次のスライドへの移動
+    const next = () => {
+        console.log('next slide open')
+    }
 
      // チェックボックスの管理の関数
     // const check = () => {
@@ -52,12 +72,6 @@ export default function Card1() {
     //         const comment = document.getElementById('card1Comment');
     //         comment.style.display = 'block';
     //     }
-    // }
-
-    // 次のスライドを出現させる関数
-    // const upSlide = () => {
-
-    // }
 
     return (
         <>
@@ -65,13 +79,13 @@ export default function Card1() {
             <div className="card1Container">
                 <div className="card1Top">
                     <button className={click1 ? 'white' : 'red'} onClick={toggle1}>{work[0].title}</button>
-                    <button className={click1 ? 'white' : 'red'} onClick={toggle1}>{work[1].title}</button>
+                    <button className={click2 ? 'white' : 'red'} onClick={toggle2}>{work[1].title}</button>
                 </div>
                 <div className="card1Bottom">
-                    <button className={click1 ? 'white' : 'red'} onClick={toggle1}>{work[2].title}</button>
-                    <button className={click1 ? 'white' : 'red'} onClick={toggle1}>{work[3].title}</button>
+                    <button className={click3 ? 'white' : 'red'} onClick={toggle3}>{work[2].title}</button>
+                    <button className={click4 ? 'white' : 'red'} onClick={toggle4}>{work[3].title}</button>
                 </div>
-                <div id="card1Comment">
+                <div id="card1Comment" className={open ? 'close' : 'open'} onClick={toggle2}>
                     <div className="card1CommentContainer">
                     <p className="card1CommentText">※現在、資格をお持ちでない方のご紹介は難しくなっております。</p>
                     <input className="card1Check" type="checkbox" onClick="check()"></input>
@@ -79,7 +93,7 @@ export default function Card1() {
                 </div>
             </div>
             <div className="card1Submit">
-                <button  id="submitButton" type="button" className="card1Submitbutton">残り4問</button>
+                <button  id="submitButton" type="button" className={green ? 'subWhite' : 'subGreen'} onClick={next}>残り4問</button>
             </div>
         </div>
         </>
