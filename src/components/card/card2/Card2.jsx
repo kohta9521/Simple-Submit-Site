@@ -23,7 +23,6 @@ export default function Card2() {
     const toggle1 = () => {
         setClick1(!click1);
         setRed(!red)
-        setOpen(!open);
     }
     const toggle2 = () => {
         setClick2(!click2);
@@ -38,21 +37,21 @@ export default function Card2() {
 
     return (
         <>
-            <div className="card1">
-            <div className="card1Container">
+            <div className="card2">
+            <div className="card2Container">
                 <div className="card1Top">
                     <button className={click1 ? 'white' : 'red'} onClick={toggle1}>{work[0].title}</button>
                     <button className={click2 ? 'white' : 'red'} onClick={toggle2}>{work[1].title}</button>
                 </div>
-                <div className="card1Comment" id="card1Comment2">
-                    <div className="card1CommentContainer">
-                    <p className="card1CommentText">※パート求人は、即日で入社できる方にのみご案内しております</p>
-                    <input className="card1Check" type="checkbox" onClick="check()"></input>
+                <div id="card2Comment2" className={open ? 'close' : 'open'} onClick={toggle2}>
+                    <div className="card2CommentContainer">
+                    <p className="card2CommentText">※パート求人は、即日で入社できる方にのみご案内しております</p>
+                    <input className="card2Check" type="checkbox" onClick="check()"></input>
                     </div>
                 </div>
             </div>
-            <div className="card1Submit">
-                <input id="submitButton2" type="button" className="card1Submitbutton" value="残り４問"></input>
+            <div id="card2Submit">
+                <button  id="submitButton" type="button"  onClick={next}>残り4問</button>
             </div>
         </div>
         </>

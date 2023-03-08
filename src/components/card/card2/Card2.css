@@ -1,33 +1,35 @@
 /* カード１　開始 */
-.card1{
+.card2{
     width: 100%;
     background-color: white;
+    padding: 5px;
 }
-.card1Top {
+.card2Top {
     padding-top: 30px;
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-.card1TopButton {
+.white {
     width: 300px;
     height: 80px;
     font-size: 25px;
+    font-weight: bold;
     background-color: #fff;
     border: 0.5px solid gray;
     border-radius: 10px;
     outline: none;
     cursor: pointer;
 }
-.card1Bottom {
+.card2Bottom {
     padding-top: 30px;
     width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 }
-.card1BottomButton {
+.card2BottomButton {
     width: 300px;
     height: 80px;
     font-size: 25px;
@@ -35,37 +37,72 @@
     border: 0.5px solid gray;
     border-radius: 10px;
 }
-.card1Submit {
+#card2Submit {
     width: 80%;
     height: 80px;
     margin: 30px auto;
 }
-.card1Submitbutton {
+.subWhite {
     width: 100%;
     height: 100%;
     font-size: 40px;
     font-weight: bold;
-    backgorund-color: white;
+    backgorund-color: red;
     color: white;
     border: 0.5px solid gray;
     border-radius: 10px;
+    cursor: pointer;
 }
-.card1Comment {
-    display: none;
+.subGreen {
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    font-weight: bold;
+    backgorund-color: #abf7b1;
+    color: white;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#card2Comment {
     width: 80%;
     height: 70px;
     margin: 30px auto;
     align-items: center;
+    background-color: black;
     justify-content: space-between;
 }
-.card1CommentContainer {
+.card2CommentContainer {
     display: flex;
 }
-.card1CommentText {
+.card2CommentText {
     color: #ED145D;
     font-size: 20px;
     fot-weight: bold;
 }
-.card1Check {
+.card2Check {
+    width: 27px;
 }
 /* カード１　終了 */
+
+
+.close {
+    display: none;
+}
+.open {
+    display: block;
+}
+
+
+.red {
+    width: 300px;
+    height: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: #FF00FF;
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
