@@ -2,37 +2,12 @@ import React, { useState, useRef} from "react";
 
 import "./Card1.css";
 
-export default function Card1() {
-
-    const [clicked, setClicked] = useState(1);
+export default function Card2() {
 
     const work = [
         { title: '正社員', value: 1 },
         { title: 'パート', value: 0 },
     ]
-
-    const changeButton = (value) => {
-        // if (clicked) {
-        //     const blue = document.getElementById('submitButton2');
-        //     const red = document.getElementById('card1TopButton2');
-        //     const check = document.getElementById('card1TopButton2');
-        //     red.style.backgroundColor = 'red';
-        //     blue.style.backgroundColor = 'blue';
-        // } else {
-        //     console.log('completea');
-        // }
-        if (value === 1) {
-            const blue = document.getElementById('submitButton2');
-            const red = document.getElementById('card1TopButton2');
-            const check = document.getElementById('card1TopButton2');
-            red.style.backgroundColor = 'red';
-            blue.style.backgroundColor = 'blue';
-        } else {
-            const comment = document.getEkementById('card1Comment2');
-            comment.style.display = 'block';
-        }
-    }
-
 
     return (
         <>
