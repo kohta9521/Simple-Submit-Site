@@ -1,0 +1,60 @@
+.comment {
+    width: 100%;
+    max-width: 800px;
+}
+.commentContainer {
+    display: flex;
+    justify-comtent: left;
+    padding: 30px 0 30px;
+}
+.commentCharImg {
+    width: 180ox;
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+.commentBox{
+    position:relative;
+    min-width: 200px;
+    height:120px;
+    background: white;
+    padding:20px;
+    text-align:left;
+    color:#333333;
+    font-size:24px;
+    font-weight:bold;
+    border-radius:34px;
+    -webkit-border-radius:34px;
+    -moz-border-radius:34px;
+    margin-right: 10px;
+}
+.commentBox:after{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    pointer-events:none;
+    position:absolute;
+    border-color: rgba(241, 65, 255, 0);
+    border-top-width:10px;
+    border-bottom-width:10px;
+    border-left-width:30px;
+    border-right-width:30px;
+    margin-top: -10px;
+    border-right-color: white;
+    right:100%;
+    top:30%;
+}
+.text-pink {
+    color: #fd4e8c;
+}
+.text-blue {
+    color: #57d1d8;
+}
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 768px) {
+    .comment {
+
+    }
+}

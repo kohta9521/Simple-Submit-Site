@@ -21,7 +21,8 @@ export default function Card1() {
     const [ click2, setClick2 ] = useState(true);
     const [ click3, setClick3 ] = useState(true);
     const [ click4, setClick4 ] = useState(true);
-    const [ colorch, setColorch ] = useState('pink');
+    const [ red, setRed ] = useState('red');
+    console.log(red);
 
     // 条件分岐部分
     // sumValueの値が１以上だった時にComment部分を表示させない
@@ -32,21 +33,46 @@ export default function Card1() {
     }
 
     // 使用している関数
+    // ボタンの色を変更させる関数
     const toggle1 = () => {
-        
+        setClick1(!click1);
+        setRed(!red)
+        alert('fuck')
     }
+
+    // 非表示／表示の関数
+    // const display = () => {
+
+    // }
+
+     // チェックボックスの管理の関数
+    // const check = () => {
+    //     const check = document.getElementById('card1Check');
+    //     if (check.checked) {
+    //         const comment = document.getElementById('card1Comment');
+    //         comment.style.display = 'none';
+    //     } else {
+    //         const comment = document.getElementById('card1Comment');
+    //         comment.style.display = 'block';
+    //     }
+    // }
+
+    // 次のスライドを出現させる関数
+    // const upSlide = () => {
+
+    // }
 
     return (
         <>
             <div className="card1">
             <div className="card1Container">
                 <div className="card1Top">
-                    <button className="card1TopButton" onClick={toggle1}>{work[0].title}</button>
-                    <button className="card1TopButton">{work[1].title}</button>
+                    <button className={click1 ? 'white' : 'red'} onClick={toggle1}>{work[0].title}</button>
+                    <button className={click1 ? 'white' : 'red'} onClick={toggle1}>{work[1].title}</button>
                 </div>
-                <div class="card1Bottom">
-                    <button className="card1TopButton">{work[2].title}</button>
-                    <button className="card1TopButton">{work[3].title}</button>
+                <div className="card1Bottom">
+                    <button className={click1 ? 'white' : 'red'} onClick={toggle1}>{work[2].title}</button>
+                    <button className={click1 ? 'white' : 'red'} onClick={toggle1}>{work[3].title}</button>
                 </div>
                 <div id="card1Comment">
                     <div className="card1CommentContainer">
