@@ -22,7 +22,7 @@ export default function Card1() {
     const [ click3, setClick3 ] = useState(true);
     const [ click4, setClick4 ] = useState(true);
     const [ red, setRed ] = useState('red');
-    const [ green, setGreen ] = useState('subGreen');
+    const [ green, setGreen ] = useState('subWhite');
     const [ open, setOpen ] = useState('close');
     console.log(red);
 
@@ -39,12 +39,11 @@ export default function Card1() {
     const toggle1 = () => {
         setClick1(!click1);
         setRed(!red);
-        setGreen(!subWhite);
+        setGreen(!green);
     }
     const toggle2 = () => {
         setClick2(!click2);
         setRed(!red);
-        setGreen(!subWhite);
     }
     const toggle3 = () => {
         setClick3(!click3);
@@ -92,7 +91,7 @@ export default function Card1() {
                     </div>
                 </div>
             </div>
-            <div className="card1Submit">
+            <div id="card1Submit">
                 <button  id="submitButton" type="button" className={green ? 'subWhite' : 'subGreen'} onClick={next}>残り4問</button>
             </div>
         </div>
