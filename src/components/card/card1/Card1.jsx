@@ -18,9 +18,6 @@ export default function Card1() {
 
     // useState宣言部分
     const [ click1, setClick1 ] = useState(true);
-    const [ click2, setClick2 ] = useState(true);
-    const [ click3, setClick3 ] = useState(true);
-    const [ click4, setClick4 ] = useState(true);
     const [ red, setRed ] = useState('red');
     console.log(red);
 
